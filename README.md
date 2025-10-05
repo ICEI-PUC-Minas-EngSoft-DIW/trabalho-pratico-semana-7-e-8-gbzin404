@@ -12,14 +12,14 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Gabriel Eduardo de Oliveira
+- Matricula:899896
+- Proposta de projeto escolhida:Site de perifericos gamer
+- Breve descrição sobre seu projeto:Um site de vendas de perifericos gamer
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+
 
 ## Print da página de detalhes do item
 
