@@ -3,20 +3,20 @@ body {
   background: #000;
   margin: 0;
   padding: 0;
-  color: rgb(2, 2, 2);
+  color: #f8f9fa;
 }
 
 /* Header */
 header {
   background: #222;
-  color: #00ffcc;
+  color: #ffc107;
   padding: 15px;
   text-align: center;
 }
 
 nav a {
   margin: 0 10px;
-  color: #00ffcc;
+  color: #ffc107;
   text-decoration: none;
   font-weight: bold;
 }
@@ -28,64 +28,82 @@ nav a:hover {
 /* Conteúdo */
 main {
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  color: #ffc107;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 article {
-  background: #444;
+  background: #111;
+  border: 1px solid #222;
   padding: 15px;
-  margin: 20px auto;
-  border: 1px solid #2016b1;
-  max-width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+article:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Botão externo */
 .external-link-button {
   text-align: center;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .external-link-button a {
   display: inline-block;
-  padding: 10px 20px;
-  background: #007acc;
-  color: white;
+  padding: 12px 25px;
+  background: #ffc107;
+  color: #000;
   text-decoration: none;
+  font-weight: bold;
   border-radius: 5px;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .external-link-button a:hover {
-  background: #005f99;
+  background: #ffb700;
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-  background: #222;
+  background: #111;
   color: white;
   text-align: center;
   padding: 15px 0;
+  border-top: 1px solid #222;
 }
 
 /* ===== Responsividade ===== */
-
-/* Tablets: 2 colunas */
 @media (min-width: 600px) {
   section {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: center;
-  }
-
-  article {
-    margin: 0;
   }
 }
 
-/* Desktop: 3 colunas */
 @media (min-width: 900px) {
   section {
     grid-template-columns: 1fr 1fr 1fr;
