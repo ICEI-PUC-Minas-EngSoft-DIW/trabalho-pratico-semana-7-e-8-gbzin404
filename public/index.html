@@ -1,184 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Periféricos Gamers</title>
-  <!-- Bootstrap CSS via CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- AOS CSS (Animate On Scroll) -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="public\detalhes.html">
-  
-  <style>
-    body {
-      background-color: #000; /* fundo preto */ /* css */
-      color: #f8f9fa; /* texto claro */
-    }
-    h2 {
-      color: #ffc107; /* amarelo destaque */
-    }
-    .card {
-      background-color: #111; 
-      border: 1px solid #222;
-      color: #f8f9fa;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-    }
-    .btn-warning {
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    .btn-warning:hover {
-      transform: scale(1.05);
-      background-color: #ffb700;
-    }
-    footer {
-      font-size: 0.9rem;
-      background-color: #111;
-      border-top: 1px solid #222;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periféricos Gamers</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-warning" href="#">Periféricos Gamers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link text-light" href="#mouses">Mouses</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#teclados">Teclados</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#headsets">Headsets</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#mousepads">Mousepads</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- CONTEÚDO -->
-  <main class="container my-5">
-
-    <!-- Mouses -->
-    <section id="mouses" class="mb-5" data-aos="fade-up">
-      <h2 class="text-center mb-4">Mouses</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="card h-100 text-center">
-            <img src="https://images.unsplash.com/photo-1594008671689-8d8b9480cae8?q=80&w=869&auto=format&fit=crop" 
-                 class="card-img-top" alt="Mouse Razer">
-            <div class="card-body">
-              <h5 class="card-title">Razer DeathAdder V2</h5>
-              <p class="card-text">Sensor óptico de 20.000 DPI para precisão extrema.</p>
-            </div>
-          </div>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🎮 Periféricos Gamers</h1>
+            <nav class="navbar">
+                <a href="#mouses">Mouses</a>
+                <a href="#teclados">Teclados</a>
+                <a href="#headsets">Headsets</a>
+                <a href="#mousepads">Mousepads</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card h-100 text-center">
-            <img src="https://images.unsplash.com/photo-1588440241012-ffd0331a05a8?q=80&w=435&auto=format&fit=crop" 
-                 class="card-img-top" alt="Mouse Logitech">
-            <div class="card-body">
-              <h5 class="card-title">Logitech G502 HERO</h5>
-              <p class="card-text">Mouse personalizável com 11 botões programáveis.</p>
+    <main class="main-content">
+        <div class="container">
+            <!-- Mouses -->
+            <section id="mouses" class="products-section">
+                <h2>🎮 Mouses Gamers</h2>
+                <div id="mouses-container" class="products-grid">
+                    <!-- Cards serão gerados dinamicamente pelo JavaScript -->
+                </div>
+            </section>
+
+            <!-- Teclados -->
+            <section id="teclados" class="products-section">
+                <h2>⌨️ Teclados Mecânicos</h2>
+                <div id="teclados-container" class="products-grid">
+                    <!-- Cards serão gerados dinamicamente pelo JavaScript -->
+                </div>
+            </section>
+
+            <!-- Headsets -->
+            <section id="headsets" class="products-section">
+                <h2>🎧 Headsets</h2>
+                <div id="headsets-container" class="products-grid">
+                    <!-- Cards serão gerados dinamicamente pelo JavaScript -->
+                </div>
+            </section>
+
+            <!-- Mousepads -->
+            <section id="mousepads" class="products-section">
+                <h2>🖱️ Mousepads</h2>
+                <div id="mousepads-container" class="products-grid">
+                    <!-- Cards serão gerados dinamicamente pelo JavaScript -->
+                </div>
+            </section>
+
+            <!-- Botão Externo -->
+            <div class="external-link">
+                <a href="https://deskidea.com.br/por-que-ter-bons-perifericos-melhora-o-desempenho-na-jogatina-dicas-e-beneficios-para-gamers/?srsltid=AfmBOoqQ9UxN0hI9ck5PzH33W1iPZBOVWsSw5K0D-VI-0rHgA4Gzqcsf" 
+                   target="_blank" rel="noopener noreferrer" class="btn-external">
+                    Saiba por que bons periféricos fazem a diferença
+                </a>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </main>
 
-    <!-- Teclados -->
-    <section id="teclados" class="mb-5" data-aos="fade-up">
-      <h2 class="text-center mb-4">Teclados</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4" data-aos="flip-left">
-          <div class="card h-100 text-center">
-            <img src="https://images.unsplash.com/photo-1623593475667-377c7376f0f4?w=500&auto=format&fit=crop&q=60" 
-                 class="card-img-top" alt="Teclado Logitech">
-            <div class="card-body">
-              <h5 class="card-title">Logitech G Pro X</h5>
-              <p class="card-text">Teclado mecânico compacto com switches customizáveis.</p>
-            </div>
-          </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 - Periféricos Gamers</p>
         </div>
+    </footer>
 
-        <div class="col-12 col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
-          <div class="card h-100 text-center">
-            <img src="https://images.unsplash.com/photo-1728439652767-713c5f412738?q=80&w=870&auto=format&fit=crop" 
-                 class="card-img-top" alt="Teclado Razer">
-            <div class="card-body">
-              <h5 class="card-title">Razer BlackWidow V3</h5>
-              <p class="card-text">Switches verdes mecânicos com iluminação RGB.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Headsets -->
-    <section id="headsets" class="mb-5" data-aos="fade-right">
-      <h2 class="text-center mb-4">Headsets</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 text-center" data-aos="zoom-in">
-            <img src="https://plus.unsplash.com/premium_photo-1679177184017-7777cdbb2ba5?q=80&w=870&auto=format&fit=crop" 
-                 class="card-img-top" alt="Headset Corsair">
-            <div class="card-body">
-              <h5 class="card-title">Corsair Void RGB Elite</h5>
-              <p class="card-text">Áudio 7.1 com conforto e iluminação personalizável.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mousepads -->
-    <section id="mousepads" class="mb-5" data-aos="fade-left">
-      <h2 class="text-center mb-4">Mousepads</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="card h-100 text-center">
-            <img src="https://images.unsplash.com/photo-1616071358409-ef30a44a90bb?q=80&w=870&auto=format&fit=crop" 
-                 class="card-img-top" alt="Mousepad SteelSeries">
-            <div class="card-body">
-              <h5 class="card-title">SteelSeries QcK Prism</h5>
-              <p class="card-text">Mousepad RGB com superfície de precisão.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Botão Externo -->
-    <div class="text-center my-5" data-aos="zoom-in">
-      <a href="https://deskidea.com.br/por-que-ter-bons-perifericos-melhora-o-desempenho-na-jogatina-dicas-e-beneficios-para-gamers" 
-         target="_blank" rel="noopener noreferrer"
-         class="btn btn-warning btn-lg fw-bold shadow">
-        Saiba por que bons periféricos fazem a diferença
-      </a>
-    </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="text-white text-center py-3">
-    <p>&copy; 2025 - Periféricos Gamers</p>
-  </footer>
-
-  <!-- Bootstrap JS via CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+    <script src="app.js"></script>
+    <script>
+        // Carregar produtos na home
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarProdutosHome();
+        });
+    </script>
 </body>
 </html>

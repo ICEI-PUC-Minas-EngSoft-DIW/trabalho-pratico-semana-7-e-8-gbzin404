@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>detalhes</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - Periféricos Gamers</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	Pagina de detalhes
 
-    <p>Essas são as informações adicionais do projeto</p>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🎮 Periféricos Gamers</h1>
+            <nav class="navbar">
+                <a href="index.html" class="btn-back">← Voltar para Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="detalhes-container">
+                <!-- Conteúdo será carregado dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 - Periféricos Gamers</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Carregar detalhes do produto
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarDetalhesProduto();
+        });
+    </script>
 </body>
 </html>
